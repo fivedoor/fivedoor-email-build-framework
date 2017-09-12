@@ -1,0 +1,54 @@
+<!-- index.nunjucks -->
+{% extends $ShellTemplate -%}
+
+
+<!-- ******* Content start ******* --> 
+{% block content -%}
+
+{% include $Preheader -%}
+
+{% include $ContainerOpen -%}
+
+{% include $Header -%}
+
+{% include $Logo -%}
+
+{% if $MOD1 %}
+{% import $MOD1 as MOD1 -%}
+{{MOD1.declare(mod1)}}
+{% endif %}
+
+{% if $MOD2 %}
+{% import $MOD2 as MOD2 -%}
+{{MOD2.declare(mod2)}}
+{% endif %}
+
+{% if $MOD3 %}
+{% import $MOD3 as MOD3 -%}
+{{MOD3.declare(mod3)}}
+{% endif %}
+
+{% if $MOD4 %}
+{% import $MOD4 as MOD4 -%}
+{{MOD4.declare(mod4)}}
+{% endif %}
+
+{% if $MOD5 %}
+{% import $MOD5 as MOD5 -%}
+{{MOD5.declare(mod5)}}
+{% endif %}
+
+{% if $MOD6 %}
+{% import $MOD6 as MOD6 -%}
+{{MOD6.declare(mod6)}}
+{% endif %}
+
+{% if $MOD7 %}
+{% import $MOD7 as MOD7 -%}
+{{MOD7.declare(mod7)}}
+{% endif %}
+
+{% include $ContainerClose %}
+
+{% endblock -%}
+<!-- ******* Content end ******* --> 

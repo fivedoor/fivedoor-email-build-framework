@@ -1,0 +1,254 @@
+﻿{
+  "preheader": "Welcome to your Tesco Bank Clubcard Credit Card",
+  "header": "All you need to get set up",
+  "logo": {
+    "href": "http://www.tescobank.com/personal/finance/home.html",
+    "type": "club"
+  },
+  "tescobank": {
+    "linkName": "tescobank",
+    "text": "tescobank.com",
+    "linkFlag": false,
+    "href": "http://www.tescobank.com",
+    "link": "{% import 'macros/link-macro.html' as Link -%}{{Link.declare(tescobank)}}"
+  },
+  "unsub": {
+    "linkName": "unsub",
+    "text": "click here",
+    "linkFlag": false,
+    "href": "_UNSUB__",
+    "link": "{% import 'macros/link-macro.html' as Link -%}{{Link.declare(unsub)}}"
+  },
+  "phishing": {
+    "linkName": "phishing",
+    "text": "phishing@tescobank.com",
+    "linkFlag": false,
+    "href": "mailto:phishing@tescobank.com",
+    "link": "{% import 'macros/link-macro.html' as Link -%}{{Link.declare(phishing)}}"
+  },
+  "mod1": {
+    "name": "Hero",
+    "number": "",
+    "numberFlag": "",
+    "type": "hero",
+    "typeFlag": "",
+    "typeId": "0",
+    "file": "macros/hero-macro.html",
+    "href": "http://www.tescobank.com/personal/finance/home.html",
+    "hrefFlag": "",
+    "img": "hero-cc1.jpg",
+    "imgFlag": "",
+    "key": "",
+    "src": "https://firebasestorage.googleapis.com/v0/b/ngdataformdemo.appspot.com/o/uploads%2Fhero-cc1.jpg?alt=media&token=7a4b47b6-eeee-4341-a18c-51d82e22bb89",
+    "srcFlag": "",
+    "height": "",
+    "width": "",
+    "cta": "",
+    "ctaFlag": "",
+    "heading": "Getting started with your new card",
+    "headingFlag": "",
+    "copy": "",
+    "copyFlag": "",
+    "encodedFlag": "false",
+    "txt": [],
+    "links": [],
+    "moduleAmends": "",
+    "approved": ""
+  },
+  "mod2": {
+    "name": "Message",
+    "number": "",
+    "numberFlag": "",
+    "type": "textMod",
+    "typeFlag": "",
+    "typeId": "1",
+    "file": "macros/1uptext-macro.html",
+    "href": "",
+    "hrefFlag": "",
+    "img": "",
+    "imgFlag": "",
+    "key": "",
+    "src": "",
+    "srcFlag": "",
+    "height": "",
+    "width": "",
+    "cta": "",
+    "ctaFlag": "",
+    "heading": "",
+    "headingFlag": "",
+    "copy": "Hello _Customer__\nWelcome to your new Tesco Bank Clubcard Credit Card. Not only will you receive, but you’ll also collect Clubcard points almost everywhere you use your card.^",
+    "copyFlag": "",
+    "encodedFlag": false,
+    "txt": [
+      {
+        "paragraph": "Hello _Customer__"
+      },
+      {
+        "paragraph": "Welcome to your new Tesco Bank Clubcard Credit Card. Not only will you receive, but you&rsquo;ll also collect Clubcard points almost everywhere you use your card.&nbsp;^"
+      }
+    ],
+    "links": [],
+    "moduleAmends": "",
+    "approved": ""
+  },
+  "mod3": {
+    "name": "Activation",
+    "number": "",
+    "numberFlag": "",
+    "type": "activationMod",
+    "typeFlag": "",
+    "typeId": "3",
+    "file": "macros/1upbox-macro.html",
+    "href": "",
+    "hrefFlag": "",
+    "img": "",
+    "imgFlag": "",
+    "key": "",
+    "src": "",
+    "srcFlag": "",
+    "height": "",
+    "width": "",
+    "cta": "",
+    "ctaFlag": "",
+    "heading": "",
+    "headingFlag": "",
+    "copy": "",
+    "copyFlag": "",
+    "encodedFlag": false,
+    "txt": [],
+    "links": [],
+    "moduleAmends": "",
+    "approved": ""
+  },
+  "mod4": {
+    "name": "Help",
+    "number": "",
+    "numberFlag": "",
+    "type": "buttonMod",
+    "typeFlag": "",
+    "typeId": "2",
+    "file": "macros/1upcta-macro.html",
+    "href": "http://www.tescobank.com/creditcards/existing-customers.html",
+    "hrefFlag": "",
+    "img": "",
+    "imgFlag": "",
+    "key": "",
+    "src": "",
+    "srcFlag": "",
+    "height": "",
+    "width": "",
+    "cta": "FIND OUT MORE",
+    "ctaFlag": "",
+    "heading": "Need any help with your account? ",
+    "headingFlag": "",
+    "copy": "Visit us online: {{tescobank| tescobank.com}}\nCall us on: 0345 300 4278*\n(Minicom 0345 671 0676*)",
+    "copyFlag": "",
+    "encodedFlag": false,
+    "txt": [
+      {
+        "paragraph": "Visit us online:&nbsp;{{tescobank.link|safe}}"
+      },
+      {
+        "paragraph": "Call us on: 0345 300&nbsp;4278*"
+      },
+      {
+        "paragraph": "(Minicom 0345 671&nbsp;0676*)"
+      }
+    ],
+    "links": [
+      {
+        "linkName": "tescobank",
+        "text": " tescobank.com",
+        "linkFlag": false,
+        "href": "http://www.tescobank.com/creditcards/existing-customers.html",
+        "link": "{% import 'macros/link-macro.html' as Link -%}{{Link.declare(tescobank)}}"
+      }
+    ],
+    "moduleAmends": "",
+    "approved": ""
+  },
+  "mod5": {
+    "name": "footer",
+    "number": "",
+    "numberFlag": "",
+    "type": "footer",
+    "typeFlag": "",
+    "typeId": "4",
+    "file": "macros/footer-macro.html",
+    "href": "",
+    "hrefFlag": "",
+    "img": "",
+    "imgFlag": "",
+    "key": "",
+    "src": "",
+    "srcFlag": "",
+    "height": "",
+    "width": "",
+    "cta": "",
+    "ctaFlag": "",
+    "heading": "",
+    "headingFlag": "",
+    "copy": "Apple, the Apple logo and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc.\n\n^Credit Card customers must have available credit to collect points. 1 point awarded per £4 spent in each purchase transaction (£4 minimum). Plus normal Clubcard points when you shop at Tesco. Points exclusions apply to certain items at Tesco, see tesco.com/clubcard/terms for details. Earn rates are subject to change. The Clubcard scheme is administered by Tesco Stores who are responsible for fulfilling points.\n\n*This number may be included as part of any inclusive call minutes provided by your phone operator.\n\nEnquiries \n\nPlease don’t reply to this email as the mailbox doesn’t accept incoming messages. Visit {{tescobank|tescobank.com}} to find the best way to contact us.\n\nIf you no longer want to receive emails from Tesco Bank please {{unsub|click here}}. \n\nImportant Information \n\nTesco Bank will never ask for confidential information or for you to confirm your security details via email. Links within our emails will only take you to information pages on our website. Please forward any suspicious emails to {{phishing|phishing@tescobank.com}} . You can visit our Security Centre for more information on staying safe online.\n\nTesco Bank is a trading name of Tesco Personal Finance plc. Registered in Scotland No. SC173199. Registered Office: Interpoint Building, 22 Haymarket Yards, Edinburgh EH12 5BH. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority.",
+    "copyFlag": "",
+    "encodedFlag": false,
+    "txt": [
+      {
+        "paragraph": "Apple, the Apple logo and iPhone are trademarks of Apple Inc., registered in the U. S. and other countries. App Store is a service mark of Apple Inc. Google Play is a trademark of Google&nbsp;Inc."
+      },
+      {
+        "paragraph": "^Credit Card customers must have available credit to collect points. 1 point awarded per &pound;4 spent in each purchase transaction (&pound;4 minimum). Plus normal Clubcard points when you shop at Tesco. Points exclusions apply to certain items at Tesco, see tesco.com/clubcard/terms for details. Earn rates are subject to change. The Clubcard scheme is administered by Tesco Stores who are responsible for fulfilling&nbsp;points."
+      },
+      {
+        "paragraph": "*This number may be included as part of any inclusive call minutes provided by your phone&nbsp;operator."
+      },
+      {
+        "paragraph": "Enquiries"
+      },
+      {
+        "paragraph": "Please don&rsquo;t reply to this email as the mailbox doesn&rsquo;t accept incoming messages. Visit {{tescobank.link|safe}} to find the best way to contact&nbsp;us."
+      },
+      {
+        "paragraph": "If you no longer want to receive emails from Tesco Bank please&nbsp;{{unsub.link|safe}}."
+      },
+      {
+        "paragraph": "Important Information"
+      },
+      {
+        "paragraph": "Tesco Bank will never ask for confidential information or for you to confirm your security details via email. Links within our emails will only take you to information pages on our website. Please forward any suspicious emails to {{phishing.link|safe}}. You can visit our Security Centre for more information on staying safe&nbsp;online."
+      },
+      {
+        "paragraph": "Tesco Bank is a trading name of Tesco Personal Finance plc. Registered in Scotland No. SC173199. Registered Office: Interpoint Building, 22 Haymarket Yards, Edinburgh EH12&nbsp;5BH. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation&nbsp;Authority."
+      }
+    ],
+    "links": [
+      {
+        "linkName": "tescobank",
+        "text": "tescobank.com",
+        "linkFlag": false,
+        "href": "http://www.tescobank.com",
+        "link": "{% import 'macros/link-macro.html' as Link -%}{{Link.declare(tescobank)}}"
+      },
+      {
+        "linkName": "unsub",
+        "text": "click here",
+        "linkFlag": false,
+        "href": "_UNSUB__",
+        "link": "{% import 'macros/link-macro.html' as Link -%}{{Link.declare(unsub)}}"
+      },
+      {
+        "linkName": "phishing",
+        "text": "phishing@tescobank.com",
+        "linkFlag": false,
+        "href": "mailto:phishing@tescobank.com",
+        "link": "{% import 'macros/link-macro.html' as Link -%}{{Link.declare(phishing)}}"
+      }
+    ],
+    "moduleAmends": "",
+    "approved": ""
+  },
+  "$MOD1": "macros/hero-macro.html",
+  "$MOD2": "macros/1uptext-macro.html",
+  "$MOD3": "macros/1upbox-macro.html",
+  "$MOD4": "macros/1upcta-macro.html",
+  "$MOD5": "macros/footer-macro.html"
+}

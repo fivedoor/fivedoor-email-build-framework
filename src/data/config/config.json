@@ -1,0 +1,22 @@
+{
+  "____MODULES____": "__Assign the modules here...",
+  "$ShellTemplate": "shell.hybrid.html",
+  "$Preheader": "modules/preheader.html",
+  "$ContainerOpen": "partials/container-open.html",
+  "$ContainerClose": "partials/container-close.html",
+  "$Header": "modules/header.html",
+  "$Logo": "modules/logo.html",
+  "$Hero": "modules/hero.html",
+  "____SETTINGS____": "__Assign the settings here...",
+  "$category": "green",
+  "____ATTRIBUTES____": "__Assign html attributes here. N.B. these may be things that for the optimum rendering of email template need to be defined as attributes as well as css",
+  "globalWidth": "600",
+  "bodyBackground": "#f3f3f3",
+  "containerBackground": "#ffffff",
+  "heroColour": "#017a8d",
+  "buttonColour": "#ca445c",
+  "____CSS____": "__CSS reset and media queries to inject",
+  "CSS": "{{ CSS1 }}",
+  "CSS1": "{{ CSS2 }}",
+  "CSS2": "{% block style %}{% endblock %}"
+}

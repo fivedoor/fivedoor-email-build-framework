@@ -1,0 +1,28 @@
+
+<!-- logo start -->
+{% if logo.type == 'credit' %}
+    <tr>
+    <td class="logo module-outer"  align="left" valign="top" bgcolor="{{containerBackground}}">
+        <table border="0" cellspacing="0" cellpadding="0">
+             <tr>
+                <td align="left" valign="top"><a href="{{logo.href}}" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/ngdataformdemo.appspot.com/o/uploads%2Flogo-tesco-bank-credit-cards.gif?alt=media&token=d0f5116f-eb65-4fb7-874f-f2dee946a0e0" alt="{{logo.alt}}" width="230" height="auto" /></a></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+{% endif %}
+{% if logo.type == 'club' %}
+    <tr>
+    <td class="logo module-outer"  align="left" valign="top" bgcolor="{{containerBackground}}">
+        <table border="0" cellspacing="0" cellpadding="0">
+             <tr>
+                <td align="left" valign="top"><a href="{{logo.href}}" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/ngdataformdemo.appspot.com/o/uploads%2Flogo-tesco-bank-clubcard-credit-cards.png?alt=media&token=dfcd800c-d3af-4c63-bfa4-5ba7e35e88a0" alt="{{logo.alt}}" width="230" height="auto" /></a></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+{% endif %}
+
+<!-- logo end -->
+
+

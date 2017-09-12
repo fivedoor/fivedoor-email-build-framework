@@ -1,0 +1,15 @@
+/* button cta  */
+.button { 
+font-family: $global-font-family;
+font-size: $button-font-size;
+color: $button-text-colour;
+background: $button-colour;
+line-height: $button-line-height;
+padding: $button-padding;
+}
+
+.button a { 
+color: $button-text-colour;
+font-weight: $button-font-weight;
+text-decoration: none;
+}

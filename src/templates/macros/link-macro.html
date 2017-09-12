@@ -1,0 +1,6 @@
+/*{% macro declare(moduleData, linkClass) -%}
+<a class="{{linkClass}}" href="{{data.href}}" target="_blank" style="text-decoration: underline">{{moduleData.txt|safe}}</a>
+{% endmacro %}*/
+
+{% macro declare(moduleData) -%}
+<a href="{{moduleData.href}}" target="_blank" style="text-decoration: underline">{{moduleData.text|safe}}</a>{% endmacro %}

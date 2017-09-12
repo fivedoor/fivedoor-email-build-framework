@@ -1,0 +1,18 @@
+
+{% macro declare(moduleData) -%}
+<!-- 1UPText start -->
+ <tr>
+	<td class="one-column module-outer"  valign="top" bgcolor="#ffffff" style="background-color:#ffffff">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%" >
+			
+ 				{% for txt in moduleData.txt -%}
+ 			<tr>
+ 			  	<td class="module-inner contents global-copy" align="left" bgcolor="#ffffff" valign="top" style="text-align:left;">{{txt.paragraph|safe}}<br/></td>
+ 			</tr>
+ 			  	{% endfor %}
+
+		</table>
+	</td>
+</tr>
+<!-- 1UPText end -->
+{% endmacro %}

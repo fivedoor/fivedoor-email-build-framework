@@ -1,0 +1,48 @@
+{% macro declare(moduleData) -%}
+
+<!-- arrow start -->
+{% if moduleData.category == 'green' %}
+   <!-- arrow_green start -->
+    <tr>
+      <td class="arrow_green" align="center" bgcolor="#017a8d" style="padding: 0; font-size: 1px; lineheight: 1px;"><img src="http://res.cloudinary.com/dagb1l62t/image/upload/v1469468976/test/tesco/arrow_green.gif" alt="" width="44" height="14" style="border: 0; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none;"></td>
+                </tr>
+    <!-- arrow_green end -->
+{% endif %}
+{% if moduleData.category == 'blue' %}
+   <!-- blue start -->
+    <tr>
+      <td class="arrow_green" align="center" bgcolor="#017a8d" style="padding: 0; font-size: 1px; lineheight: 1px;"><img src="http://res.cloudinary.com/dagb1l62t/image/upload/v1469468976/test/tesco/arrow_paleblue.gif" alt="" width="44" height="14" style="border: 0; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none;"></td>
+                </tr>
+    <!-- blue end -->
+{% endif %}
+
+<!-- arrow end -->
+
+
+<!-- hero title start -->
+ <tr>
+  <td class="one-column module-outer"  valign="top" bgcolor="#017a8d" style="background-color:#017a8d">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+      <tr>
+              <td class="module-inner contents hero" align="left" bgcolor="#017a8d" valign="top" style="text-align:left;">{{moduleData.heading|safe}}
+              <br/></td>
+       </tr>
+         {% for txt in moduleData.txt -%}
+       <tr>
+           <td class="module-inner contents global-copy" align="left" bgcolor="#017a8d" valign="top" style="text-align:left;">{{txt.paragraph|safe}}<br/><br/></td>
+       </tr>
+           {% endfor %}
+    </table>
+  </td>
+</tr>
+<!-- hero title end -->
+
+
+<!--  start -->
+<tr>
+  <td class="full-width-image" align="left" valign="top" style="padding:0"><img src="{{moduleData.src}}" alt="{{moduleData.alt}}" width="{{moduleData.width /2}}" height="auto" /></td>
+</tr>
+<!--  end -->
+
+
+{% endmacro %}

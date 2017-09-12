@@ -1,0 +1,22 @@
+{% macro declare(moduleData) -%}
+<!-- footer start -->
+<tr>
+	<td class="one-column" style="padding:0;">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tr>
+        <td class="footer-container" align="left" valign="top">
+          <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+              <td class="footer" align="left" valign="top">
+              {% for txt in moduleData.txt -%}
+              {{txt.paragraph|safe}}<br/><br/>
+              {% endfor %}</td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- footer end -->
+{% endmacro %}

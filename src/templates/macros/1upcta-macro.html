@@ -1,0 +1,46 @@
+{% macro declare(moduleData) -%}
+
+<!-- 1UPCta start -->
+ <tr>
+	<td class="one-column module-outer"  valign="top" bgcolor="#ffffff" style="background-color:#ffffff">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%" >
+
+        
+            <tr>
+                <td class="module-inner contents tertiary title" align="center" bgcolor="#ffffff" valign="top" style="text-align:center;">{{moduleData.heading|safe}}
+                </td>
+             </tr>
+
+        <!-- button start -->
+<tr>
+    <td class="button-inner" align="center" valign="top">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#ca445c" class="table nobg">
+
+             <tr>
+                 <td align="left" class="nomob" valign="top"><img src="http://res.cloudinary.com/dagb1l62t/image/upload/v1469468976/test/tesco/cta_red_left.gif" width="3" height="44" alt="" style="border: 0; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none;"></td>
+                 <td align="center" valign="middle" class="button nopadding" height="44" style="background: #ca445c; color: #ffffff; font-family: Verdana, Arial, sans-serif; font-size: 14px; line-height: 14px; padding: 0px 40px 0;"><a href="{{moduleData.href}}" style="color: #ffffff; font-weight: bold; text-decoration: none; text-transform: uppercase;">{{moduleData.cta|safe}}</a></td>
+                 <td align="left" class="nomob" valign="top"><img src="http://res.cloudinary.com/dagb1l62t/image/upload/v1469468978/test/tesco/cta_red_right.gif" width="3" height="44" alt="" style="border: 0; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none;"></td>
+             </tr>
+              
+        </table>
+    </td>
+</tr>
+<!--  button end -->
+
+
+ 			
+               
+             <tr>
+                   <td class="module-inner contents global-copy" align="center" bgcolor="#ffffff" valign="top" style="text-align:center;">  {% for txt in moduleData.txt -%}{{txt.paragraph|safe}}<br/> {% endfor %}</td>
+             </tr>
+                  
+
+			
+			
+			
+		</table>
+	</td>
+</tr>
+<!-- 1UPCta end -->
+
+{% endmacro %}

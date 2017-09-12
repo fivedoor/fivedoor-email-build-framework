@@ -1,0 +1,21 @@
+/* Media Queries */
+@media only screen and (max-width: $global-width) {
+.nomob {
+	display: none !important;
+}
+.nopadding {
+	padding: 0 0 0 0 !important;
+}
+.nobg { 
+	background: none !important;
+}  
+.table {
+	width: 100% !important;
+}
+
+@import 'optionals/button-mob';
+
+@import 'optionals/corners-mob';
+}
+
+

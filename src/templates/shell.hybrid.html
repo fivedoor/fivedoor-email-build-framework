@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://litmus.com/community/discussions/39-explanation-of-doctype-html-attributes-and-meta-tags-in-email-head -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <!-- 
+*************** Windows Phone Media Queries Support ************** 
+include a conditional statement in your code before the IE=edge meta tag to prevent breaking images in live mail.  source: https://www.emailonacid.com/blog/article/email-development/prevent-ie-edge-meta-tag-from-breaking-images-in-live-mail -->
+    <!--[if !mso]><!-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<!--<![endif]-->
+   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{title.txt|safe}}</title>
+<link rel="stylesheet" href="css/inline.css"> 
+{{CSS}}
+</head>
+ 
+<body bgcolor="{{bodyBackground}}">
+{% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* CLIENT-SPECIFIC STYLES */
+body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+img { -ms-interpolation-mode: bicubic; }
+
+/* RESET STYLES */
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+table { border-collapse: collapse !important; border-spacing: 0;}
+body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+* { margin: 0; padding: 0;}
+
+/* ANDROID CENTER FIX */
+/* https://litmus.com/community/snippets/57-android-4-4-center-hack?utm_campaign=bestpractices_snippets&utm_source=litmusblog&utm_medium=blog
+https://litmus.com/community/code/4194-why-is-email-not-centered-on-android-4-4
+https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/
+*/ 
+div[style*="margin: 16px 0"] { 
+	margin: 0 auto !important
+} 
+body {
+	margin: 0 auto !important; /* 
+	https://litmus.com/community/code/4432-android-4-4-still-not-centering
+	*/ 
+}
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+/* CLICKABLE PHONE NUMBERS */
+a[href^="tel"], a[href^="sms"] {
+	text-decoration: none;
+	color: #1b3160;
+	pointer-events: none;
+	cursor: default;
+}
+.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+	text-decoration: default;
+	color: #1b3160 !important;
+	pointer-events: auto;
+	cursor: default;
+}

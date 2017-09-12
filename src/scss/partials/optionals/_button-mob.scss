@@ -1,0 +1,12 @@
+/* button cta  */
+
+.button {
+border-radius: $button-radius;
+}
+.button a{ 
+background: $button-colour !important; 
+border-bottom: $button-border; 
+width: 100% !important; 
+display:block !important; 
+padding: $button-padding-mob !important; 
+}

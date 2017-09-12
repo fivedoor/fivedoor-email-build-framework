@@ -1,0 +1,258 @@
+/* INLINE RESET STYLES */
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display:block; }
+body { height: 100% !important; margin: 0 auto !important; padding: 0 !important; width: 100% !important; }
+
+/* EMAIL SPECIFIC */ 
+body { 
+	background-color: $body-background !important;
+	font-family: $global-font-family;
+} /* defined colour bg full width for ?? http://tabletrtd.com/background-color-on-entire-email/ */
+
+table {
+	font-family: sans-serif;
+	color: $global-font-colour;
+}
+/* does blue links hack the above make this unnecessary?: */
+.appleLinksBlue a {color: $appleLinksBlue !important; text-decoration: none;}
+
+.container {
+	width: 100%;
+	table-layout: fixed;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	background-color: $body-background;
+}
+.webkit {
+	max-width: $global-width;
+	margin: 0 auto;
+}
+.main-table {
+	Margin: 0 auto;
+	width: 100%;
+	max-width: $global-width;
+	border-spacing: 0;
+	background-color:$container-background;
+}
+.module-outer {	
+	padding: $global-module-padding;
+}
+.module-inner {
+	padding: $global-paragraph-padding;
+}
+.button-inner {
+	padding: $global-button-padding;
+}
+.image-inner {
+	padding: $two-column-image-padding;
+}
+.contents {
+	width: 100%;
+}
+p {
+	Margin: 0;
+}
+a {
+	color: $link-colour;
+	text-decoration: underline;
+}
+.full-width-image img {
+	width: 100%;
+	max-width: $global-width;
+	height: auto;
+}
+.preheader{
+	font-family: $global-font-family; 
+	font-size: $global-font-colour; 
+	color: $white; 
+	line-height: 1px; 
+	max-height: 0px; 
+	max-width: 0px; 
+	opacity: 0; 
+	overflow: hidden;
+	display: none; 
+}
+.header{
+	font-family: Verdana, Geneva, sans-serif; 
+	font-size: $header-font-size;
+	color: $dark-grey; 
+	line-height: $header-line-height;
+	text-decoration: none; 
+	-webkit-text-size-adjust: none; 
+	padding: $header-padding;
+	margin: 0; 
+}
+.global-copy{
+	font-family: $global-font-family; 
+	font-size: $global-font-size; 
+	color: $global-font-colour; 
+	line-height: $global-line-height; 
+	text-decoration: none; 
+	-webkit-text-size-adjust:none;
+	/* Margin-bottom: $global-margin-bottom; */
+}
+.global-copy.heading {
+	font-weight: $global-heading-font-weight; 
+}
+.hero {
+	font-family: $h1-font-family;
+	font-size: $h1-font-size;
+	color: $h1-colour;
+	font-weight: $h1-font-weight;
+	line-height: $h1-line-height;
+	/* Margin-bottom: $h1-margin-bottom; */
+}
+.secondary {
+	font-family: $h2-font-family;
+	font-size: $h2-font-size;
+	font-weight: $h2-font-weight;
+	color: $h2-colour;
+	line-height: $h2-line-height;
+	/* Margin-bottom: $h2-margin-bottom; */
+}
+.tertiary {
+	font-family: $h3-font-family;
+	font-size: $h3-font-size;
+	font-weight: $h3-font-weight;
+	color: $h3-colour;
+	line-height: $h3-line-height;
+	/* Margin-bottom: $h3-margin-bottom; */
+}
+.activate, 
+.register, 
+.app, 
+.directdebit {
+	font-family: $h4-font-family;
+	font-size: $h4-font-size;
+	color: $h4-colour;
+	font-weight: $h4-font-weight;
+	line-height: $h4-line-height;
+	/* Margin-bottom: $h4-margin-bottom; */
+}
+.footer-container {
+	padding: $footer-container-padding;
+	background-color: $body-background;
+}
+.footer {
+	font-family: $footer-font-family;
+	font-size: $footer-font-size;
+	color: $footer-font-colour;
+	line-height: $footer-line-height;
+	padding: $footer-paragraph-padding;
+	/* Margin-bottom: $footer-margin-bottom; */
+}
+@import 'optionals/button';
+
+/* One column layout */
+
+.one-column {
+}
+.one-column .contents {
+}
+
+/* Two column layout */
+.two-column {
+	text-align: center;
+	font-size: 0;
+}
+.two-column .column {
+	width: 100%;
+	max-width: $global-2col-width;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column .contents {
+	text-align: left;
+}
+.two-column .default img {
+	width: 100%;
+	max-width: 280px;
+	height: auto;
+}
+.two-column .text {
+	padding-top: 10px;
+}
+
+/* Three column layout*/
+.three-column {
+	text-align: center;
+	font-size: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.three-column .column {
+	width: 100%;
+	max-width: $global-3col-width;
+	display: inline-block;
+	vertical-align: top;
+}
+.three-column img {
+	width: 100%;
+	max-width: 180px;
+	height: auto;
+}
+.three-column .contents {
+	font-size: 14px;
+	text-align: center;
+}
+.three-column .text {
+	padding-top: 10px;
+}
+
+/* Left sidebar layout */
+.left-sidebar {
+	text-align: center;
+	font-size: 0;
+}
+.left-sidebar .column {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.left-sidebar .left {
+	max-width: 100px;
+}
+.left-sidebar .right {
+	max-width: 500px;
+}
+.left-sidebar .img {
+	width: 100%;
+	max-width: 80px;
+	height: auto;
+}
+.left-sidebar .contents {
+	font-size: 14px;
+	text-align: center;
+}
+.left-sidebar a {
+	color: #85ab70;
+}
+
+/* Right sidebar layout  */
+.right-sidebar {
+	text-align: center;
+	font-size: 0;
+}
+.right-sidebar .column {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.right-sidebar .left {
+	max-width: 100px;
+}
+.right-sidebar .right {
+	max-width: 500px;
+}
+.right-sidebar .img {
+	width: 100%;
+	max-width: 80px;
+	height: auto;
+}
+.right-sidebar .contents {
+	font-size: 14px;
+	text-align: center;
+}
+.right-sidebar a {
+	color: #70bbd9;
+}
