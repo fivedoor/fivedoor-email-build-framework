@@ -3,8 +3,9 @@
 	<td class="one-column"  valign="top" style="padding:5px 10px;"  bgcolor="{{bodyBackground}}" >
 		<table border="0" cellspacing="0" cellpadding="0" width="100%" >
 			<tr>
-				<td class="module-inner contents header" align="left" bgcolor="{{bodyBackground}}"  valign="top">
-{% for txt in header.txt %}{{txt.paragraph|safe}}<br/>{% endfor %}</td> 
+				<td class="module-inner contents header" align="left" bgcolor="{{bodyBackground}}"  valign="top">{{header|safe}}<br/>
+					Can’t see this email? Click <a href="{{hosted|safe}}" target="_blank" style="text-decoration: underline;color: #666666; ">here</a>.
+				</td> 
 			</tr>
 		</table>
 	</td>
