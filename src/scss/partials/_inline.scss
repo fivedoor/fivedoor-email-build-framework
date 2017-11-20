@@ -71,6 +71,9 @@ a {
 	overflow: hidden;
 	display: none; 
 }
+.logo {
+padding: $logo-padding;
+}
 .header{
 	font-family: Verdana, Geneva, sans-serif; 
 	font-size: $header-font-size;
@@ -115,6 +118,7 @@ a {
 	font-weight: $h3-font-weight;
 	color: $h3-colour;
 	line-height: $h3-line-height;
+	 text-transform: capitalize;
 	/* Margin-bottom: $h3-margin-bottom; */
 }
 .activate, 
