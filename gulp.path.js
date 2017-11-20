@@ -13,7 +13,7 @@ module.exports = function () {
 
         // SOURCE FILES
         images_src: 'src/images/**/*.+(png|jpg|gif|svg)',
-        data_src: './src/data/src/',
+        data_src: './src/data/src/*.json',
         sass_src: './src/scss/*.scss',
 
         // DEVELOPMENT
