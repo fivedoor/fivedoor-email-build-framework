@@ -78,14 +78,11 @@ var watch = require('gulp-watch');
 // So we can run tasks in sequence as Gulp otherwise activates tasks simultaneously.
 var runSequence = require('run-sequence');
 
-var runSequence = require('run-sequence');
-
 // Clear Files
 var del = require('del');
 
 // Clear contents of data.json
 var fs = require('fs')
-
 
 /*
 |--------------------------------------------------------------------------
@@ -145,6 +142,14 @@ gulp.task('data_src:clean', function(done) {
   clean(['./src/data/src/*.json'], done); 
 });
 
+// De-caching for Data files
+// https://github.com/colynb/gulp-data/issues/17
+function requireUncached( $module ) {
+    delete require.cache[require.resolve( $module )];
+    return require( $module );
+}
+
+
 /*
 |--------------------------------------------------------------------------
 | GULP TASKS
@@ -155,13 +160,18 @@ gulp.task('data_src:clean', function(done) {
 // --------------------------------------------------
 // Using runSequence plugin, rather than chaining them with Gulp, so tasks don't need to have dependency on other tasks when run by themselves
 gulp.task('build', function(callback) {
-  runSequence('folders:clean', 'data', 'sass', 'template:comp', 'links:inject', 'css:inline','css:inject', 'html:tidy', 'html:min', 'watch', callback);
+  runSequence('folders:clean', 'data', 'sass', 'template', callback);
+});
+
+// REBUILD CHAIN
+// --------------------------------------------------
+gulp.task('rebuild', function(callback) {
+  runSequence('data', 'sass', 'template:comp', 'links:inject', 'css:inline','css:inject', 'html:tidy', 'html:min', callback);
 });
 
 
 // TEMPLATE CHAIN
 // --------------------------------------------------
-// Using runSequence plugin, rather than chaining them with Gulp, so tasks don't need to have dependency on other tasks when run by themselves
 gulp.task('template', function(callback) {
   runSequence('template:comp', 'links:inject', 'css:inline','css:inject', 'html:tidy', 'html:min', 'watch', callback);
 });
@@ -188,7 +198,7 @@ gulp.task('data', function(callback) {
 // INITIATE SERVER 
 // --------------------------------------------------
 // var reload = bs.reload;
-gulp.task('bs', function() {
+gulp.task('browserSync', function() {
 
   bs.init({
     server: {
@@ -207,33 +217,26 @@ gulp.task('bs', function() {
 
     }
   });
-      bs.reload("index.html");
-
-   // gulp.watch("*.html").on("change", reload); // still needed?
+    //  bs.reload("index.html");
+    // gulp.watch("*.html").on("change", bs.reload); // still needed?
 });
 
 
 // WATCH  
 // --------------------------------------------------
-gulp.task('watch',['bs'], function(){
-     //  var server = livereload;
+gulp.task('watch',['browserSync'], function(){
      // when sass files are edited sass task will rerun and browser will reload automatically
-     gulp.watch(path.sass_watch, ['build']);
+     gulp.watch(path.sass_watch, ['rebuild']);
      // when page index is edited template task will rerun and browser will reload automatically
-     gulp.watch(path.njks_pages, ['build']);
-     gulp.watch(path.njks_temp, ['build']);
-     gulp.watch(path.data_output, ['build']);
-      // when template index is edited browser will reload automatically
+     gulp.watch(path.njks_pages, ['rebuild']);
+     gulp.watch(path.njks_temp, ['rebuild']);
+     gulp.watch(path.data_src, ['rebuild']);
     
-  // Create LiveReload server
-  livereload.listen();
-
+  // when template index is edited browser will reload automatically
   // Watch any files in html_dev_template, reload on change
-  gulp.watch([path.html_dev_template]).on('change', livereload.changed);
+  gulp.watch([path.html_dev_template]).on('change', bs.reload);
 
-  gulp.watch(path.html_dev_template).on('change', function(file) {
-      server.changed(file.path);
-  });
+
 });
 
 
@@ -242,6 +245,7 @@ gulp.task('watch',['bs'], function(){
 // --------------------------------------------------
 // Merge images.json into data.json
 gulp.task('data:comp', function() {
+
   gulp
     .src(['src/data/src/*.json', 'src/data/config/*.json'])
     .pipe(merge('src/data/data.json'))
@@ -280,9 +284,9 @@ gulp.task('template:comp', function() {
   return gulp
     .src('src/pages/**/*.+(html|njk)')
     // Adding data to Nunjucks
-    .pipe(data(function() {
-      return require('./src/data/data.json')
-    }))
+    .pipe( data(function(file){
+         return requireUncached('./src/data/data.json');
+     }))
     // Renders template with nunjucks
     .pipe(nunjucksRender({
       path: ['src/templates'] // CHECK IF THIS NEED TO BE REDEFINED or dips into the folders
