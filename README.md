@@ -1,6 +1,6 @@
 # fivedoor-email-build-framework
 
-Email template framework which enables separation of content management & editing from html templating & configuration using json data source file
+Email template framework which allows for separation of content management & editing from html templating & configuration using json data source file
 
 ### SET UP
 Download repository and run `npm build `
