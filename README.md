@@ -29,7 +29,7 @@ Command:  `gulp build`
 Outputs a standard and minified html template file in the list folder
 
 ## OUTPUT LOCATION
-dist /
+`dist/`
 
 
 ## CLEAR FOLDERS 
