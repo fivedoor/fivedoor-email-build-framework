@@ -139,7 +139,7 @@ gulp.task('folders:clean', function(done) {
 
 gulp.task('data_src:clean', function(done) {
 
-  clean(['./src/data/src/*.json'], done); 
+  clean(['./src/data/campaign/*.json'], done); 
 });
 
 // De-caching for Data files
@@ -247,7 +247,7 @@ gulp.task('watch',['browserSync'], function(){
 gulp.task('data:comp', function() {
 
   gulp
-    .src(['src/data/src/*.json', 'src/data/config/*.json'])
+    .src(['src/data/campaign/*.json', 'src/data/config/*.json'])
     .pipe(merge('src/data/data.json'))
     .pipe(gulp.dest('./'))
     .pipe(notify({ message: 'data:comp task complete' }));
