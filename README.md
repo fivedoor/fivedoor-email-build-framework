@@ -20,7 +20,7 @@ https://github.com/fivedoor/campaign-supernova
 
 ## INPUT LOCATION
 Just add the json campaign file to the campaign folder: 
-src/data/campaign 
+`src/data/campaign`
 
 ## RUN
 Command:  `gulp build`
