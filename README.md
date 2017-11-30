@@ -2,6 +2,15 @@
 
 Email template framework which allows for separation of content management & editing from html templating & configuration using json data source file
 
+## ABOUT
+Runs sequence of tasks to generate template: 
+- Data compilation of campaign and config data;
+- Compile sass —> css
+- Compile template and inject content
+- inject inline CSS 
+- inject CSS resets  & media Queries
+- Generate readable and minified html  templates to dist folder
+
 ## SET UP
 Download repository and run `npm build `
 
@@ -23,21 +32,5 @@ Outputs a standard and minified html template file in the list folder
 dist /
 
 
-
-
-### BUILD CHAIN
-Runs sequence of tasks to generate template: 
-- Data compilation of campaign and config data;
-- Compile sass —> css
-- Compile template and inject content
-- inject inline CSS 
-- inject CSS resets  & media Queries
-- Generate readable and minified html  templates to dist folder
-
-Command: `gulp build`
-
-
-### CLEAR CHAIN
-Cleans folders
-
+## CLEAR FOLDERS 
 Command: `gulp clear`
