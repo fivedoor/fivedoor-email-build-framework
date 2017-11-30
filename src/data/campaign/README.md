@@ -1,1 +1,1 @@
-Add campaign JSON here
+Add campaign JSON to this folder
