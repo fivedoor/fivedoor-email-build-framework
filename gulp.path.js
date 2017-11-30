@@ -13,12 +13,12 @@ module.exports = function () {
 
         // SOURCE FILES
         images_src: 'src/images/**/*.+(png|jpg|gif|svg)',
-        data_src: './src/data/src/*.json',
+        data_src: './src/data/campaign/*.json',
         sass_src: './src/scss/*.scss',
 
         // DEVELOPMENT
         data_output: './src/data/data.json',
-        copy_encoded_output: './src/data/src/',
+        copy_encoded_output: './src/data/campaign/',
         images_data_output: './src/data/src/images/images1-local.json',
         sass_watch: 'src/scss/**/*.scss',
         css_src: './src/css/*.css',
