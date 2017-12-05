@@ -1,4 +1,5 @@
-# fivedoor-email-build-framework
+# Campaign Builder
+
 
 Email template framework which allows for separation of content management & editing from html templating & configuration using json data source file
 
