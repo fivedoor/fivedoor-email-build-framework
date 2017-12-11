@@ -1,7 +1,7 @@
 # Campaign Builder
 
 
-Email template framework which allows for separation of content management & editing from html templating & configuration using json data source file
+Email template framework which allows for the segregation of content management & config from html editing and build by using json data source file
 
 ## ABOUT
 Runs sequence of tasks to generate template: 
