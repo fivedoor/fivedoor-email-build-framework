@@ -27,7 +27,7 @@ Just add the json campaign file to the campaign folder:
 Command:  `gulp build`
 
 ## OUTPUT
-Outputs a standard and minified html template file in the list folder
+Outputs a standard and minified html template file in the 'dist' folder
 
 ## OUTPUT LOCATION
 `dist/`
