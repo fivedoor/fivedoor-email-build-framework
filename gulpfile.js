@@ -131,9 +131,9 @@ gulp.task('folders:clean', function(done) {
   clean(minified, done);
   clean(email, done);
 
-  fs.truncate('./src/data/data.json', 0);
+  fs.truncate('./src/data/data.json', 0, done);
 
-  done();
+  // done();
 
 });
 
