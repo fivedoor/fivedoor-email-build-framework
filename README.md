@@ -13,7 +13,7 @@ Runs sequence of tasks to generate template:
 
 ## REQUIREMENTS
 Requires gulp-cli installed globally:
-npm install --global gulp-cli
+`npm install --global gulp-cli`
 
 ## SET UP
 Download repository and run `npm install ` in the directory
@@ -39,7 +39,7 @@ Outputs a standard and minified html template file in the 'dist' folder
 If build throws the following error: 
 Error: Node Sass does not yet support your current environment: 
 Then try:
-npm rebuild node-sass
+`npm rebuild node-sass`
 
 
 ## CLEAR FOLDERS 
