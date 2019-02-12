@@ -37,7 +37,8 @@ Outputs a standard and minified html template file in the 'dist' folder
 
 ## TROUBLESHOOTING
 If build throws the following error: 
-Error: Node Sass does not yet support your current environment: 
+Error: Node Sass does not yet support your current environment:
+
 Then try:
 `npm rebuild node-sass`
 
